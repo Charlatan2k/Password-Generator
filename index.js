@@ -92,9 +92,13 @@ const characters = [
   '/',
 ];
 
+// Selecting password fields and password Button
+
 let passwordField1 = document.getElementById('password-field-1');
 let passwordField2 = document.getElementById('password-field-2');
 let generatePasswordsBtn = document.querySelector('.passwords-btn');
+
+// Function to generate the random passwords
 
 function generatePasswords() {
   let limit = 15;
@@ -114,5 +118,7 @@ function generatePasswords() {
 
   return passwords;
 }
+
+// Adding the event listener for the button to execute the generateRandom passwords function when clicked
 
 generatePasswordsBtn.addEventListener('click', generatePasswords);
